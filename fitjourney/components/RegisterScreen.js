@@ -120,6 +120,9 @@ const styles = StyleSheet.create({
  
   buttonSpacing: {
     height: 20, // Add space between buttons
+  },
+  trainerbtn:{
+    backgroundColor:'#6f55f2'
   }
 });
 

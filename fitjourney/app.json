@@ -3,7 +3,7 @@
     "name": "fitjourney",
     "slug": "fitjourney",
     "version": "1.0.0",
-    "platforms": [ "android"],
+    "platforms": [ "web","android"],
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",

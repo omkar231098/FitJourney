@@ -4,7 +4,10 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 
 import TrainerRegisterScreen from './TrainerRegisterScreen';
-
+import FitnessGoalsScreen from './FitnessGoalsScreen';
+import WeightLossScreen from './WeightLossScreen';
+import MusclegainScreen from './MusclegainScreen';
+import CardioScreeen from './CardioScreeen';
 import HomeScreen from './HomeScreen';
 import LoginScreen from './LoginScreen';
 import RegisterScreen from './RegisterScreen';
@@ -19,6 +22,10 @@ const Navigation = () => {
         <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="Register" component={RegisterScreen} />
         <Stack.Screen name="TrainerRegister" component={TrainerRegisterScreen} />
+        <Stack.Screen name="FitnessGoals" component={FitnessGoalsScreen} />
+        <Stack.Screen name="WeightLoss" component={WeightLossScreen} />
+        <Stack.Screen name="MuscleGain" component={MusclegainScreen} />
+        <Stack.Screen name="CardioFitness" component={CardioScreeen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
