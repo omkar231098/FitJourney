@@ -8,6 +8,11 @@ const HomeScreen = ({ navigation }) => {
     navigation.navigate('FitnessGoals');
   };
 
+
+  const navigateToWorkoutLog = () => {
+    navigation.navigate('WorkoutLog');
+  };
+
   return (
     <View style={{ flex: 1 }}>
       <CustomNavigationBar navigation={navigation} />
@@ -18,6 +23,10 @@ const HomeScreen = ({ navigation }) => {
           onPress={navigateToFitnessGoals}
         >
           <Text style={styles.buttonText}>Set Fitness Goal</Text>
+        </TouchableOpacity>
+        <View style={styles.buttonSpacing} />
+        <TouchableOpacity style={styles.button} onPress={navigateToWorkoutLog}>
+          <Text style={styles.buttonText}>View Workout Log</Text>
         </TouchableOpacity>
       </View>
     </View>
@@ -45,6 +54,9 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontSize: 16,
   },
+  buttonSpacing: {
+    height: 20, // Add space between buttons
+  }
 });
 
 export default HomeScreen;

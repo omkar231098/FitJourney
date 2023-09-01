@@ -11,6 +11,7 @@ import CardioScreeen from './CardioScreeen';
 import HomeScreen from './HomeScreen';
 import LoginScreen from './LoginScreen';
 import RegisterScreen from './RegisterScreen';
+import WorkoutLogScreen from './WorkoutLogScreen'
 
 const Stack = createStackNavigator();
 
@@ -26,6 +27,7 @@ const Navigation = () => {
         <Stack.Screen name="WeightLoss" component={WeightLossScreen} />
         <Stack.Screen name="MuscleGain" component={MusclegainScreen} />
         <Stack.Screen name="CardioFitness" component={CardioScreeen} />
+        <Stack.Screen name="WorkoutLog" component={WorkoutLogScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
